@@ -182,8 +182,8 @@ MCU                | Work Well | Work Wrong | Untested  | Remarks
 FireBeetle-ESP32  |      √       |             |            | 
 FireBeetle-ESP8266  |      √       |             |            | 
 FireBeetle-BLE4.1 |       √      |             |            | 
-Arduino uno |       √      |             |            | with dupont line
-Arduino leonardo |      √       |             |            | with dupont line
+Arduino uno |       √      |             |            | 
+Arduino leonardo |      √       |             |            | 
 
 ## Credits
 
