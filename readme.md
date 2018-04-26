@@ -4,8 +4,6 @@
 can cooperate with our software Imu_show(https://github.com/DFRobot/DFRobot_IMU_Show) real-time transmission display current posture (in the default standard mode), <br>
 and other MCU through the SPI interface Communication transmission attitude information and temperature, altitude information. <br>
 
-![back face](https://raw.githubusercontent.com/DFRobot/binaryfiles/master/DFR0480/DFR0480svg1.png)
-
 ## DFRobot_10DOF Library for Arduino
 ---------------------------------------------------------
 Provide a library faciltates operations in the 10dof modules.
