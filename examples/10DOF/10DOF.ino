@@ -1,5 +1,5 @@
 /*
- * file clock.ino
+ * file 10DOF.ino
  *
  * @ https://github.com/DFRobot/DFRobot_10DOF
  *
@@ -116,7 +116,7 @@ void setup()
   while(!Serial);
   SPI.begin();
   Serial.println();
-  Serial.println("dofX test");
+  Serial.println("10dof test");
   
   while(dof.begin() != 0) {  //spend time 500ms
     Serial.println("dof begin faild !");
