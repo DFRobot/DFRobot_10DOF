@@ -25,9 +25,9 @@
  * pin_accelInt ----> int2
  */
 #ifdef __AVR__
-uint8_t       pin_cs = 2, pin_dataRdy = 3, pin_accelInt = 4;
+uint8_t       pin_cs = 4, pin_dataRdy = 2, pin_accelInt = 3;
 #else
-uint8_t       pin_cs = D2, pin_dataRdy = D3, pin_accelInt = D4;
+uint8_t       pin_cs = D4, pin_dataRdy = D2, pin_accelInt = D3;
 #endif
 
 DFRobot_10DOF_SPI dof(pin_cs);
