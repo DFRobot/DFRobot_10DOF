@@ -1,0 +1,18 @@
+DFRobot_DOFX_SPI	KEYWORD1
+
+readAttitude	KEYWORD2
+readAccelerometer	KEYWORD2
+readGyro	KEYWORD2
+readMagnetic	KEYWORD2
+readEnvironment	KEYWORD2
+setMode	KEYWORD2
+setSeaLevel	KEYWORD2
+setAccelInt	KEYWORD2
+enableAccelInt	KEYWORD2
+disableAccelInt	KEYWORD2
+enableLED	KEYWORD2
+disableLED	KEYWORD2
+enableDataInt	KEYWORD2
+disableDataInt	KEYWORD2
+weakup	KEYWORD2
+readStatus	KEYWORD2
