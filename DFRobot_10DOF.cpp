@@ -81,7 +81,12 @@ void DFRobot_10DOF::setSeaLevel(float seaLevel)
 void DFRobot_10DOF::setAccelInt(int16_t up, int16_t low)
 {
   uint8_t       buf[4] = {(uint8_t)(up & 0x00ff), (uint8_t)(up >> 8), (uint8_t)(low & 0x00ff), (uint8_t)(low >> 8)};
-  write(DOF_CONTROL_PEDOMETERL, buf, 4);
+  write(DOF_CONTROL_PEDOMETERH, buf, 4);
+}
+
+void DFRobot_10DOF::setAccelInt(float up, float low)
+{
+  setAccelInt((int16_t)(up / DOF_ACCEL_LSB), (int16_t)(low / DOF_ACCEL_LSB));
 }
 
 void DFRobot_10DOF::enableAccelInt()

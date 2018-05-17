@@ -173,6 +173,32 @@ void weakUp();
 
 ```
 
+```C++
+
+#include "simplePedometer.h"
+
+/*
+ * @brief pedometer init
+ *
+ * @param psP       pedometer struct
+ *        threshold pedometer threshold
+ */
+void pedometerInit(sPedometer_t* psP, float threshold);
+
+/*
+ * @brief pedometer action calculate
+ *
+ * @param psP       pedometer struct
+ *
+ *        timeInterval        time interval between two sample
+ *        accelX              accelerometer data x
+ *        accelY              accelerometer data y
+ *        accelZ              accelerometer data z
+ */
+int calcPedometer(sPedometer_t* psP, int timeInterval, float accelX, float accelY, float accelZ);
+
+```
+
 ## Compatibility
 
 MCU                | Work Well | Work Wrong | Untested  | Remarks

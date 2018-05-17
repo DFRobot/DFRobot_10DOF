@@ -44,18 +44,18 @@
 #define DOF_CONTROL_POWER        (0x00 + DOF_CONTROL_BASE)
 #define DOF_CONTROL_EXTEND       (0x01 + DOF_CONTROL_BASE)
 #define DOF_CONTROL_ID           (0x02 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_PEDOMETERL   (0x03 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_PEDOMETERH   (0x04 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_TEMPUH       (0x05 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_TEMPUL       (0x06 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_TEMPLH       (0x07 + DOF_CONTROL_BASE)
-#define DOF_CONTROL_TEMPLL       (0x08 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_PEDOMETERH   (0x03 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_PEDOMETERL   (0x05 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_TEMPUH       (0x07 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_TEMPUL       (0x08 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_TEMPLH       (0x09 + DOF_CONTROL_BASE)
+#define DOF_CONTROL_TEMPLL       (0x0a + DOF_CONTROL_BASE)
 
 #define DOF_BME_BASE             0x60
 #define DOF_BME_SEALEVEL         (0x00 + DOF_BME_BASE)
 
-#define DOF_ACCEL_LSB        (2.0f * 2000.0f / 65535.0f)
-#define DOF_GYRO_LSB         (2.0f * 16.0f / 65536.0f)
+#define DOF_ACCEL_LSB        (2.0f * 16.0f / 65535.0f)
+#define DOF_GYRO_LSB         (2.0f * 2000.0f / 65536.0f)
 #define DOF_MAG_LSB          (2.0f * 8.1f / 4096)
 
 typedef enum {
@@ -78,6 +78,7 @@ class DFRobot_10DOF {
     void        setMode(e10DOF_mode_t eMode);
     void        setSeaLevel(float seaLevel);
     void        setAccelInt(int16_t up, int16_t low);
+    void        setAccelInt(float up, float low);
     void        enableAccelInt();
     void        disableAccelInt();
     void        enableLED();
